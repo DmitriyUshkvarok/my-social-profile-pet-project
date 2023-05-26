@@ -1,4 +1,9 @@
-@import-normalize; /* bring in normalize.css styles */
+@import-normalize;
+/* bring in normalize.css styles */
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   margin: 0;
@@ -7,9 +12,38 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url('./images/1663303976_b-1.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --background-body: linear-gradient(to right, #000000, #0f9b0f);
+  --background-header: linear-gradient(to right, #efefbb, #d4d3dd);
+  --background-movies-item: linear-gradient(to right, #efefbb, #d4d3dd);
+  --color: rgb(41, 28, 28);
+  --border-color: gray;
+  --transition: 0.4s;
+  --box-shadow-header: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  --hover-color-text: rgb(42, 155, 155);
+}
+
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
